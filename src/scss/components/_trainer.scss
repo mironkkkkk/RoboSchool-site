@@ -1,0 +1,136 @@
+.trainer {
+  padding: 120px 0;
+
+  &__title {
+    margin: 0 0 60px;
+    color: var(--dark-color);
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 160%;
+  }
+
+  &__swiper {
+    padding-bottom: 85px;
+  }
+
+  &__scrollbar {
+    width: 400px !important;
+    left: 0 !important;
+  }
+
+  &__navigation {
+    position: absolute;
+    right: 0;
+    bottom: 17px;
+    width: 84px;
+  }
+}
+
+.swiper-slide {
+  width: 360px !important;
+  &__photo {
+    margin: 0 0 20px;
+  }
+
+  &__name {
+    color: var(--daark-color);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 160%;
+
+    margin:0 0 10px;
+  }
+
+  &__descr {
+    color: var(--grey-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+
+    margin: 0 0 20px;
+  }
+
+  &__about {
+    color: var(--red-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+  }
+}
+
+.swiper-scrollbar-drag {
+  left: -70px !important;
+
+  border-radius: 40px;
+  background-color: var(--dark-color);
+}
+
+.swiper-button-prev {
+  background-image: url(../img/slider-arrow.png);
+  transform: rotate(-180deg);
+
+
+  background-size: 33px;
+
+  left: -6px !important;
+
+  width: 33px;
+  height: 33px;
+
+  &:after {
+    content: none;
+  }
+}
+
+.swiper-button-next {
+  background-image: url(../img/slider-arrow.png);
+
+  background-size: 33px;
+
+  width: 33px;
+  height: 33px;
+  &:after {
+    content: none;
+  }
+}
+
+
+.swiper-slide__about {
+  &:focus {
+    outline: none;
+  }
+}
+
+.swiper-slide__about.focus-visible {
+  outline: 2px solid var(--red-color);
+  outline-offset: 5px;
+}
+
+.swiper-button-prev.focus-visible, .swiper-button-next.focus-visible {
+  outline: 2px solid var(--red-color);
+  outline-offset: 3px;
+  border-radius: 50%;
+}
+
+@include tablet {
+  .trainer {
+    &__container {
+    padding: 0 !important;
+    }
+  }
+
+  .swiper {
+    &-scrollbar {
+      margin:0 0 10px 20px;
+    }
+  }
+}
+
+@include mobile {
+  .trainer {
+    padding: 60px 0;
+    &__title {
+      text-align: center;
+    }
+  }
+}

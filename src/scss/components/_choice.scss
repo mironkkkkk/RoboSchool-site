@@ -1,0 +1,141 @@
+.choice {
+  padding: 0 0 120px;
+  &__title {
+    color: var(--dark-color);
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 160%;
+    margin: 0 0 60px;
+  }
+
+  &__list{
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 360px;
+    padding: 40px;
+    text-align: center;
+
+    box-sizing: border-box;
+    border: 1px solid #14102433;
+    border-radius: 20px;
+
+    margin: 0;
+
+    &--active {
+      background: #141024;
+
+      .choice__tarif {
+        color: var(--light-color);
+      }
+
+      .choice__sale {
+        color: var(--light-color);
+      }
+
+      .choice__descr {
+        color: var(--light-color);
+      }
+    }
+  }
+
+  &__tarif {
+    color: var(--dark-color);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 160%;
+
+    margin: 0 0 63px;
+  }
+
+  &__sale {
+    display: block;
+    color: var(--dark-color);
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 160%;
+
+    margin: 0 0 20px;
+  }
+
+  &__descr {
+    color: var(--dark-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+    max-width: 250px;
+
+    margin: 0 0 60px;
+  }
+
+  &__btn {
+    color: var(--light-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+
+    border-radius: 5px;
+    background: var(--red-color);
+
+    padding: 25px 54px;
+
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    @include hover {
+      background-color: #e9e9e9;
+      color: var(--darkc-color);
+    }
+  }
+}
+
+.choice__btn.focus-visible {
+  outline: 2px solid var(--red-color);
+  outline-offset: 5px;
+}
+
+
+@include tablet {
+  .choice {
+    &__item {
+      width: 300px;
+      padding: 10px;
+    }
+  }
+}
+
+@include mobile {
+  .choice {
+    padding: 0 0 60px;
+    &__container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    &__title {
+      text-align: center;
+      margin: 0 0 40px;
+      max-width: 400px;
+    }
+    &__item {
+      width: 360px;
+      padding: 40px;
+      text-align: center;
+
+      box-sizing: border-box;
+      border: 1px solid #14102433;
+      border-radius: 20px;
+
+      margin: 0;
+    }
+  }
+}
