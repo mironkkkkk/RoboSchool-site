@@ -1,16 +1,11 @@
 .footer {
-  background-color: #141024;
+  background-color: hsl(252, 38%, 10%);
   padding: 40px 70px;
 
   &__container {
-    justify-content: space-between;
+    flex-direction: column;
     max-width: 1720px;
-  }
-
-  &__link {
-    color: var(--light-color);
-    font-size: 20px;
-    line-height: 160%;
+    row-gap: 10px;
   }
 
   &__number {
@@ -37,27 +32,57 @@
     line-height: 160%;
   }
 
-  &__logo {
-    flex-direction: column;
-    gap: 18px;
-
-    transition: transform .3s ease-in-out;
+  &__info {
+    justify-content: space-between;
 
     &:focus {
       outline: none;
     }
+  }
 
-    @include hover {
-      transform: scale(105%);
+  &__logo {
+    @include mobile {
+      width: 134px;
+      height: 29px;
+      display: flex;
+      align-items: center;
     }
   }
 
   &__image {
-    padding-top: 13px;
+    transition: transform .3s ease-in-out;
+    @include hover {
+      transform: scale(105%);
+    }
+
   }
 }
 
 .footer__logo.focus-visible, .footer__number.focus-visible {
   outline: 2px solid var(--red-color);
   outline-offset: 5px;
+}
+
+@include mobile {
+  .footer {
+    padding: 40px 0 20px;
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+    &__number {
+      font-size: 16px;
+      text-align: center;
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+  }
 }

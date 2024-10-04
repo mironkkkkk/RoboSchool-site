@@ -67,8 +67,8 @@
 
 @include tablet {
   .hero {
-    background-position: calc(100% - 10px) 255px;
-    background-size: 610px 750px;
+    background-position: calc(100% - 10px) 292px;
+    background-size: 580px 710px;
   }
 }
 
@@ -87,7 +87,7 @@
 
     &__title {
       color: var(--light-color);
-      font-size: 50px;
+      font-size: 30px;
       font-weight: 600;
       line-height: 160%;
       margin: 0 0 10px;
@@ -95,21 +95,21 @@
 
     &__descr {
       color: var(--light-color);
-      font-size: 25px;
+      font-size: 16px;
       font-weight: 400;
       line-height: 160%;
-      min-width: 300px;
+      max-width: 300px;
       text-align: center;
       margin: 0 0 415px;
     }
 
     &__link {
+      width: 100%;
       color: var(--light-color);
       font-size: 25px;
       font-weight: 400;
       line-height: 160%;
-
-      padding: 25px 165px;
+      text-align: center;
     }
   }
 }

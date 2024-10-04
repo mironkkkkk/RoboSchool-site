@@ -38,9 +38,9 @@
 }
 
 .form {
-
   &__input {
-    padding: 20px 380px 20px 20px;
+    padding: 20px;
+    width: 100%;
     border-radius: 5px;
     background: var(--light-color);
 
@@ -101,9 +101,6 @@
 
 @include tablet {
   .form {
-    &__input {
-      padding:20px 280px 20px 20px;
-    }
     &__btn {
       max-width: 484px;
     }
@@ -124,6 +121,11 @@
     &__descr {
       text-align: center;
       margin: 0 0 40px;
+    }
+  }
+  .form {
+    &__input {
+      padding-right:200px;
     }
   }
 }

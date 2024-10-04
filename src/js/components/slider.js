@@ -5,10 +5,10 @@ Swiper.use([Navigation, Pagination, Scrollbar]);
 
 
 const Slider = new Swiper('.trainer__swiper', {
-  slidesPerView: 3,
+  slidesPerView: 2,
   spaceBetween: 40,
   loop: true,
-  
+
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -19,4 +19,14 @@ const Slider = new Swiper('.trainer__swiper', {
     draggable: true,
     dragSize: 210,
   },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1.4,
+      spaceBetween: 20,
+    },
+    520: {
+      slidesPerView: 3,
+    },
+  }
 });
