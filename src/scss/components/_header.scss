@@ -104,6 +104,7 @@
   @include tablet {
     display: flex;
     align-items: center;
+    column-gap: 10px;
   }
 
   &__link {
@@ -129,7 +130,6 @@
 
 .burger {
   @include burger;
-
   color: var(--light-color);
   --burger-height: 12px;
   --burger-width: 28px;

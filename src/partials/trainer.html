@@ -13,25 +13,25 @@
           <img class="swiper-slide__photo" src="img/slide2-image.png" alt="">
           <p class="swiper-slide__name">Марина Орлова</p>
           <p class="swiper-slide__descr">преподаватель по&nbsp;робототехнике</p>
-          <a class="swiper-slide__about" href="">Подробнее</a>
+          <button class="btn-reset swiper-slide__about" data-graph-path="trainer__modal-two">Подробнее</button>
         </div>
         <div class="swiper-slide">
           <img class="swiper-slide__photo" src="img/slide3-image.png" alt="">
           <p class="swiper-slide__name">Максим Петров</p>
           <p class="swiper-slide__descr">преподаватель по&nbsp;программированию</p>
-          <a class="swiper-slide__about" href="">Подробнее</a>
+          <button class="btn-reset swiper-slide__about" data-graph-path="trainer__modal-three">Подробнее</button>
         </div>
         <div class="swiper-slide">
           <img class="swiper-slide__photo" src="img/slide4-image.png" alt="">
           <p class="swiper-slide__name">Константин Назаров</p>
           <p class="swiper-slide__descr">преподаватель по&nbsp;робототехнике</p>
-          <a class="swiper-slide__about" href="">Подробнее</a>
+          <button class="btn-reset swiper-slide__about" data-graph-path="trainer__modal-four">Подробнее</button>
         </div>
         <div class="swiper-slide">
           <img class="swiper-slide__photo" src="img/slide5-image.png" alt="">
           <p class="swiper-slide__name">Лиза Весенняя</p>
           <p class="swiper-slide__descr">преподаватель по&nbsp;программированию</p>
-          <a class="swiper-slide__about" href="">Подробнее</a>
+          <button class="btn-reset swiper-slide__about" data-graph-path="trainer__modal-five">Подробнее</button>
         </div>
       </div>
 
@@ -45,32 +45,27 @@
 
     <div class="graph-modal trainer-modal">
       <div class="graph-modal__container trainer-modal__container" role="dialog" aria-modal="true" data-graph-target="trainer__modal">
-        <button class="btn-reset js-modal-close graph-modal__close trainer-modal__btn" aria-label="Закрыть модальное окно"></button>
+        <button class="btn-reset js-modal-close graph-modal__close trainer-modal__btn" aria-label="Закрыть модальное окно">Закрыть</button>
         <div class="graph-modal__content trainer-modal__content">
           <div class="trainer-modal__top">
             <img class="trainer-modal__image" src="img/slide1-image.png" alt="">
-            <div class="trainer-modal_info">
+            <div class="trainer-modal__info">
               <h3 class="trainer-modal__heading">Ирина Лайм</h3>
               <span class="trainer-modal__link">преподаватель по&nbsp;робототехнике</span>
               <ul class="trainer-modal__list list-reset flex">
                 <li class="trainer-modal__item">
                   <a class="trainer-modal__link" href="">
-                    <img class="trainer-modal__pic" src="" alt="">
+                    <img class="trainer-modal__pic" src=" img/facebook-logo.svg" alt="">
                   </a>
-                </li>
-              </ul>
-
-              <ul class="trainer-modal__list list-reset flex"></ul>
-                <li class="trainer-modal__item">
-                  <a class="trainer-modal__link" href="">
-                    <img class="trainer-modal__pic" src="" alt="">
+                  <a class="trainer-modal__link" href=""></a>
+                    <img class="trainer-modal__pic" src="img/instagram-logo.svg" alt="">
                   </a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="trainer__bottom">
-            <ul class="trainer-model__bottom-list list-reset flex">
+          <div class="trainer-modal__bottom">
+            <ul class="trainer-modal__bottom-list list-reset flex">
               <li class="trainer-modal__item">
                 <button class="trainer-modal__nav-btn trainer-modal__nav-btn--active btn-reset">Образование</button>
               </li>
@@ -82,16 +77,224 @@
               </li>
             </ul>
 
-            <div class="trainer-model__descr-block">
-              <p class="trainer-modek__descr">Сентябрь 1995&nbsp;&mdash; Июнь 2000
-                Санкт-Петербургский политехнический университет Петра Великого
-                Факультет: Компьютерных наук и&nbsp;технологий
-                Специальность: Математика и&nbsp;компьютерные науки
+            <form class="trainer-modal__bottom-list-mobile">
+              <select class="trainer-modal__bottom-select" name="" id="modal-select">
+                <option class="trainer-modal__bottom-select__text" value="education">Образование</option>
+                <option class="trainer-modal__bottom-select__text" value="exp work">Опыт работы</option>
+                <option class="trainer-modal__bottom-select__text" value="awards">Награды</option>
+              </select>
+            </form>
+
+            <div class="trainer-modal__descr-block">
+              <p class="trainer-modal__descr">Сентябрь 1995&nbsp;&mdash; Июнь 2000<br/>
+                Санкт-Петербургский политехнический университет Петра Великого<br/>
+                Факультет: Компьютерных наук и&nbsp;технологий<br/>
+                Специальность: Математика и&nbsp;компьютерные науки<br/>
                 Форма обучения: Очная</p>
 
               <h3 class="trainer-modal__heading">Курсы и&nbsp;тренинги</h3>
-              <p class="trainer-modek__descr">Ноябрь 2020&nbsp;&mdash; Февраль 2021
-                Программа дополнительного образования &laquo;3D&nbsp;Моделирование&raquo; <span>Место проведения: Институт дополнительного образования &laquo;Политех&raquo;</span></p>
+              <p class="trainer-modal__descr">Ноябрь 2020&nbsp;&mdash; Февраль 2021<br/>
+                Программа дополнительного образования &laquo;3D&nbsp;<br/>Моделирование&raquo; <span>Место проведения: Институт дополнительного образования &laquo;Политех&raquo;</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="graph-modal trainer-modal">
+      <div class="graph-modal__container trainer-modal__container" role="dialog" aria-modal="true" data-graph-target="trainer__modal-two">
+        <button class="btn-reset js-modal-close graph-modal__close trainer-modal__btn" aria-label="Закрыть модальное окно">Закрыть</button>
+        <div class="graph-modal__content trainer-modal__content">
+          <div class="trainer-modal__top">
+            <img class="trainer-modal__image" src="img/slide2-image.png" alt="">
+            <div class="trainer-modal__info">
+              <h3 class="trainer-modal__heading">Марина Орлова</h3>
+              <span class="trainer-modal__link">преподаватель по&nbsp;робототехнике</span>
+              <ul class="trainer-modal__list list-reset flex">
+                <li class="trainer-modal__item">
+                  <a class="trainer-modal__link" href="">
+                    <img class="trainer-modal__pic" src=" img/facebook-logo.svg" alt="">
+                  </a>
+                  <a class="trainer-modal__link" href=""></a>
+                    <img class="trainer-modal__pic" src="img/instagram-logo.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="trainer-modal__bottom">
+            <ul class="trainer-modal__bottom-list list-reset flex">
+              <li class="trainer-modal__item">
+                <button class="trainer-modal__nav-btn trainer-modal__nav-btn--active btn-reset">Образование</button>
+              </li>
+              <li class="trainer-modal__item">
+                <button class="trainer-modal__nav-btn trainer-modal__nav-btn--disabled btn-reset">Опыт работы</button>
+              </li>
+              <li class="trainer-modal__item">
+                <button class="trainer-modal__nav-btn trainer-modal__nav-btn--disabled btn-reset ">Награды</button>
+              </li>
+            </ul>
+
+            <div class="trainer-modal__descr-block">
+              <p class="trainer-modal__descr">Сентябрь 1995&nbsp;&mdash; Июнь 2000<br/>
+                Санкт-Петербургский политехнический университет Петра Великого<br/>
+                Факультет: Компьютерных наук и&nbsp;технологий<br/>
+                Специальность: Математика и&nbsp;компьютерные науки<br/>
+                Форма обучения: Очная</p>
+
+              <h3 class="trainer-modal__heading">Курсы и&nbsp;тренинги</h3>
+              <p class="trainer-modal__descr">Ноябрь 2020&nbsp;&mdash; Февраль 2021<br/>
+                Программа дополнительного образования &laquo;3D&nbsp;<br/>Моделирование&raquo; <span>Место проведения: Институт дополнительного образования &laquo;Политех&raquo;</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="graph-modal trainer-modal">
+      <div class="graph-modal__container trainer-modal__container" role="dialog" aria-modal="true" data-graph-target="trainer__modal-three">
+        <button class="btn-reset js-modal-close graph-modal__close trainer-modal__btn" aria-label="Закрыть модальное окно">Закрыть</button>
+        <div class="graph-modal__content trainer-modal__content">
+          <div class="trainer-modal__top">
+            <img class="trainer-modal__image" src="img/slide3-image.png" alt="">
+            <div class="trainer-modal__info">
+              <h3 class="trainer-modal__heading">Максим Петров</h3>
+              <span class="trainer-modal__link">преподаватель по&nbsp;программированию</span>
+              <ul class="trainer-modal__list list-reset flex">
+                <li class="trainer-modal__item">
+                  <a class="trainer-modal__link" href="">
+                    <img class="trainer-modal__pic" src=" img/facebook-logo.svg" alt="">
+                  </a>
+                  <a class="trainer-modal__link" href=""></a>
+                    <img class="trainer-modal__pic" src="img/instagram-logo.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="trainer-modal__bottom">
+            <ul class="trainer-modal__bottom-list list-reset flex">
+              <li class="trainer-modal__item">
+                <button class="trainer-modal__nav-btn trainer-modal__nav-btn--active btn-reset">Образование</button>
+              </li>
+              <li class="trainer-modal__item">
+                <button class="trainer-modal__nav-btn trainer-modal__nav-btn--disabled btn-reset">Опыт работы</button>
+              </li>
+              <li class="trainer-modal__item">
+                <button class="trainer-modal__nav-btn trainer-modal__nav-btn--disabled btn-reset ">Награды</button>
+              </li>
+            </ul>
+
+            <div class="trainer-modal__descr-block">
+              <p class="trainer-modal__descr">Сентябрь 1995&nbsp;&mdash; Июнь 2000<br/>
+                Санкт-Петербургский политехнический университет Петра Великого<br/>
+                Факультет: Компьютерных наук и&nbsp;технологий<br/>
+                Специальность: Математика и&nbsp;компьютерные науки<br/>
+                Форма обучения: Очная</p>
+
+              <h3 class="trainer-modal__heading">Курсы и&nbsp;тренинги</h3>
+              <p class="trainer-modal__descr">Ноябрь 2020&nbsp;&mdash; Февраль 2021<br/>
+                Программа дополнительного образования &laquo;3D&nbsp;<br/>Моделирование&raquo; <span>Место проведения: Институт дополнительного образования &laquo;Политех&raquo;</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="graph-modal trainer-modal">
+      <div class="graph-modal__container trainer-modal__container" role="dialog" aria-modal="true" data-graph-target="trainer__modal-four">
+        <button class="btn-reset js-modal-close graph-modal__close trainer-modal__btn" aria-label="Закрыть модальное окно">Закрыть</button>
+        <div class="graph-modal__content trainer-modal__content">
+          <div class="trainer-modal__top">
+            <img class="trainer-modal__image" src="img/slide4-image.png" alt="">
+            <div class="trainer-modal__info">
+              <h3 class="trainer-modal__heading">Константин Назаров</h3>
+              <span class="trainer-modal__link">преподаватель по&nbsp;робототехнике</span>
+              <ul class="trainer-modal__list list-reset flex">
+                <li class="trainer-modal__item">
+                  <a class="trainer-modal__link" href="">
+                    <img class="trainer-modal__pic" src=" img/facebook-logo.svg" alt="">
+                  </a>
+                  <a class="trainer-modal__link" href=""></a>
+                    <img class="trainer-modal__pic" src="img/instagram-logo.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="trainer-modal__bottom">
+            <ul class="trainer-modal__bottom-list list-reset flex">
+              <li class="trainer-modal__item">
+                <button class="trainer-modal__nav-btn trainer-modal__nav-btn--active btn-reset">Образование</button>
+              </li>
+              <li class="trainer-modal__item">
+                <button class="trainer-modal__nav-btn trainer-modal__nav-btn--disabled btn-reset">Опыт работы</button>
+              </li>
+              <li class="trainer-modal__item">
+                <button class="trainer-modal__nav-btn trainer-modal__nav-btn--disabled btn-reset ">Награды</button>
+              </li>
+            </ul>
+
+            <div class="trainer-modal__descr-block">
+              <p class="trainer-modal__descr">Сентябрь 1995&nbsp;&mdash; Июнь 2000<br/>
+                Санкт-Петербургский политехнический университет Петра Великого<br/>
+                Факультет: Компьютерных наук и&nbsp;технологий<br/>
+                Специальность: Математика и&nbsp;компьютерные науки<br/>
+                Форма обучения: Очная</p>
+
+              <h3 class="trainer-modal__heading">Курсы и&nbsp;тренинги</h3>
+              <p class="trainer-modal__descr">Ноябрь 2020&nbsp;&mdash; Февраль 2021<br/>
+                Программа дополнительного образования &laquo;3D&nbsp;<br/>Моделирование&raquo; <span>Место проведения: Институт дополнительного образования &laquo;Политех&raquo;</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="graph-modal trainer-modal">
+      <div class="graph-modal__container trainer-modal__container" role="dialog" aria-modal="true" data-graph-target="trainer__modal-five">
+        <button class="btn-reset js-modal-close graph-modal__close trainer-modal__btn" aria-label="Закрыть модальное окно">Закрыть</button>
+        <div class="graph-modal__content trainer-modal__content">
+          <div class="trainer-modal__top">
+            <img class="trainer-modal__image" src="img/slide5-image.png" alt="">
+            <div class="trainer-modal__info">
+              <h3 class="trainer-modal__heading">Лиза Весенняя</h3>
+              <span class="trainer-modal__link">преподаватель по&nbsp;программированию</span>
+              <ul class="trainer-modal__list list-reset flex">
+                <li class="trainer-modal__item">
+                  <a class="trainer-modal__link" href="">
+                    <img class="trainer-modal__pic" src=" img/facebook-logo.svg" alt="">
+                  </a>
+                  <a class="trainer-modal__link" href=""></a>
+                    <img class="trainer-modal__pic" src="img/instagram-logo.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="trainer-modal__bottom">
+            <ul class="trainer-modal__bottom-list list-reset flex">
+              <li class="trainer-modal__item">
+                <button class="trainer-modal__nav-btn trainer-modal__nav-btn--active btn-reset">Образование</button>
+              </li>
+              <li class="trainer-modal__item">
+                <button class="trainer-modal__nav-btn trainer-modal__nav-btn--disabled btn-reset">Опыт работы</button>
+              </li>
+              <li class="trainer-modal__item">
+                <button class="trainer-modal__nav-btn trainer-modal__nav-btn--disabled btn-reset ">Награды</button>
+              </li>
+            </ul>
+
+            <div class="trainer-modal__descr-block">
+              <p class="trainer-modal__descr">Сентябрь 1995&nbsp;&mdash; Июнь 2000<br/>
+                Санкт-Петербургский политехнический университет Петра Великого<br/>
+                Факультет: Компьютерных наук и&nbsp;технологий<br/>
+                Специальность: Математика и&nbsp;компьютерные науки<br/>
+                Форма обучения: Очная</p>
+
+              <h3 class="trainer-modal__heading">Курсы и&nbsp;тренинги</h3>
+              <p class="trainer-modal__descr">Ноябрь 2020&nbsp;&mdash; Февраль 2021<br/>
+                Программа дополнительного образования &laquo;3D&nbsp;<br/>Моделирование&raquo; <span>Место проведения: Институт дополнительного образования &laquo;Политех&raquo;</span></p>
             </div>
           </div>
         </div>

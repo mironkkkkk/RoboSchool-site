@@ -164,8 +164,217 @@
 
 
 .trainer-modal {
+  &__line {
+    border-radius: 10px solid rgba(20, 16, 36, 0.11);
+  }
   &__descr-block {
     overflow-y: scroll;
     max-height: 334px;
+  }
+  &__container {
+    padding: 40px;
+    @include mobile {
+      padding: 30px 20px;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    @include mobile {
+      row-gap: 20px;
+    }
+  }
+  &__top {
+    display: flex;
+    column-gap: 40px;
+    @include mobile {
+      column-gap: 10px;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    @include mobile {
+      row-gap: 0;
+    }
+  }
+  &__image {
+    width: 160px;
+    height: 222px;
+    border-radius: 20px;
+    @include mobile {
+      width: 60px;
+      height: 88px;
+      border-radius: 5px;
+    }
+  }
+  &__link {
+    color:var(--grey-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+    @include mobile {
+      // max-width: 200px;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 140%;
+      margin-bottom: 10px;
+    }
+  }
+  &__descr {
+    color: rgb(20, 16, 36);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 160%;
+    margin: 0 0 40px;
+  }
+  &__heading {
+    color: var(--dark-color);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 160%;
+    margin: 0;
+    @include mobile {
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 160%;
+
+    }
+  }
+  &__descr {
+    color: rgb(20, 16, 36);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 160%;
+    @include mobile {
+      margin: 0 0 20px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 160%;
+    }
+  }
+}
+
+.trainer-modal__bottom {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  @include mobile {
+    row-gap: 20px;
+  }
+  &-list {
+    column-gap: 180px;
+    @include mobile {
+      column-gap: 50px;
+    }
+  }
+}
+
+
+.graph-modal__close {
+  display: flex;
+  background-image: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 60px;
+  top: 40px;
+
+  color: var(--grey-color);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 160%;
+
+  @include mobile {
+    top: 20px;
+    right: 35px;
+    font-size: 16px;
+  }
+}
+
+.trainer-modal__nav-btn {
+  &--active {
+    color: var(--red-color);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 160%;
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+  &--disabled {
+    color: var(--grey-color);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 160%;
+
+    transition: color .3s ease-in-out;
+    @include hover {
+      color: var(--dark-color);
+    }
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+}
+
+.trainer-modal__bottom-list-mobile {
+  display: none;
+  @include mobile {
+    display: block;
+  }
+}
+
+.trainer-modal__bottom-select {
+  background: var(--red-color);
+  width: 100%;
+  height: 46px;
+  color: var(--light-color);
+  text-align: center;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+  }
+  background-image: url(../img/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 40% + 20px) center;
+}
+
+.trainer-modal__bottom-select::-ms-expand {
+  display: none;
+}
+
+.trainer-modal__bottom-list {
+  @include mobile {
+    display: none;
+  }
+}
+
+body {
+  ::-webkit-scrollbar {
+    width: 8px;
+    @include mobile {
+      width: 6px;
+    }
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--dark-color);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #d4d4d4;
+    border-radius: 4px;
   }
 }
